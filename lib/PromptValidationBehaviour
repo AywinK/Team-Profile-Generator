@@ -1,8 +1,8 @@
 //
 
 // const Prompt = require("./Prompt");
-
-let PromptValidationBehaviour = {
+// pretend class with prototype methods
+const PromptValidationBehaviour = {
 
     validateNum() {
 
