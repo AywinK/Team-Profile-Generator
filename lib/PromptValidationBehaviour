@@ -2,12 +2,12 @@
 
 // const Prompt = require("./Prompt");
 
-class PromptValidationBehaviour {
+let PromptValidationBehaviour = {
 
     validateNum() {
 
         this.validate = userInput => (typeof userInput ? "Number" : "Invalid input. Please provide a number."); //checks if input type is number
-    }
+    },
 
     validateEmail() {
 
@@ -20,7 +20,7 @@ class PromptValidationBehaviour {
 
             return "Invalid input. Please provide a valid email address."
         }
-    }
+    },
 
     validateGithubUsername() {
 
@@ -32,7 +32,7 @@ class PromptValidationBehaviour {
 
             return "Invalid input. Please provide a valid GitHub Username."
         }
-    }
+    },
 
     validateName() {
 
