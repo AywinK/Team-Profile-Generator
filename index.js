@@ -39,6 +39,7 @@ const render = require("./src/page-template.js");
 // prompt manager
 // THEN create manager obj -> push to array + START options prompt
 // THEN BRANCH into either |||create eng/int -> push to arr -> RETURN to options prompt (recursive? https://github.com/SBoudrias/Inquirer.js/blob/master/packages/inquirer/examples/recursive.js)||| OR |||html generation -> file write -> exit|||
+// https://github.com/SBoudrias/Inquirer.js/blob/master/packages/inquirer/examples/hierarchical.js
 
 function init() {
     console.log("Answer the following questions to generate your Team Profile file");
@@ -79,6 +80,13 @@ function init() {
                         generatesInternPrompt();
                         break
                         case "Finish building the team - Generate Team Profile":
+                            console.log(teamDataArr);
+                            const renderedHTML = render(teamDataArr);
+                            if (!fs.existsSync(OUTPUT_DIR)) {
+                                fs.mkdir(OUTPUT_DIR, err => err ? console.error(err) : "");
+                            }
+                            fs.writeFile(outputPath, renderedHTML, err => err ? console.error(err) : "");
+                            process.exit;
                             // startsExitProcess();
             }
         })
@@ -124,3 +132,5 @@ function init() {
 }
 
 init();
+
+// console.log(OUTPUT_DIR);
