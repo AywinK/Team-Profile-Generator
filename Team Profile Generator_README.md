@@ -58,7 +58,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Contributing
 
-This project is not seeking any contributors currently.
+This project is not currently seeking any contributors.
 
 ## Tests
 
