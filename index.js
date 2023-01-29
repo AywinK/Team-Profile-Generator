@@ -31,3 +31,10 @@ const render = require("./src/page-template.js");
 //right to file
 //console log closing screen
 //process.exit
+
+// new logic
+//console.log welcome
+// initialise teamdata arr
+// prompt manager
+// THEN create manager obj -> push to array + START options prompt
+// THEN BRANCH into either |||create eng/int -> push to arr -> RETURN to options prompt||| OR |||html generation -> file write -> exit|||
