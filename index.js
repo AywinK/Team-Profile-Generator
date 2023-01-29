@@ -53,15 +53,13 @@ function init() {
             .createOfficeNumberPrompt()
             .createPromptsArr();
 
-
-
     inquirer.prompt(managerPromptArr).then(data => {
-        console.log(data);
+        // console.log(data);
         const { name, id, email, officeNumber } = data;
         const managerObj = new Manager(name, id, email, officeNumber);
         teamDataArr.push(managerObj);
-        console.log(teamDataArr);
-        inquirer.prompt(optionsPromptArr).then(data => { console.log(data) });
+        // console.log(teamDataArr);
+        generatesMenuPrompt();
     });
 
     function generatesMenuPrompt() {
@@ -79,8 +77,46 @@ function init() {
                     case "Intern":
                         generatesInternPrompt();
                         case "Finish building the team - Generate Team Profile":
-                            startsExitProcess();
+                            // startsExitProcess();
             }
+        })
+    }
+
+    function generatesEngineerPrompt() {
+
+        const engineerPromptArr =
+        new PromptBuilder("engineer")
+            .createNamePrompt()
+            .createIdPrompt().
+            createEmailPrompt()
+            .createGithubPrompt()
+            .createPromptsArr();
+
+        inquirer.prompt(engineerPromptArr)
+        .then( data => {
+            const {name, id, email, github} = data;
+            const engineerObj = new Engineer(name, id, email, github);
+            teamDataArr.push(engineerObj);
+            generatesMenuPrompt();
+        })
+    }
+
+    function generatesInternPrompt() {
+
+        const internPromptArr =
+        new PromptBuilder("intern")
+            .createNamePrompt()
+            .createIdPrompt().
+            createEmailPrompt()
+            .createSchoolPrompt()
+            .createPromptsArr();
+
+        inquirer.prompt(internPromptArr)
+        .then( data => {
+            const {name, id, email, school} = data;
+            const internObj = new Intern(name, id, email, school);
+            teamDataArr.push(internObj);
+            generatesMenuPrompt();
         })
     }
 }
