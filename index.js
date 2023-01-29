@@ -74,8 +74,10 @@ function init() {
             switch (data.options) {
                 case "Engineer":
                     generatesEngineerPrompt();
+                    break
                     case "Intern":
                         generatesInternPrompt();
+                        break
                         case "Finish building the team - Generate Team Profile":
                             // startsExitProcess();
             }
