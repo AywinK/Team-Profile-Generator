@@ -14,6 +14,7 @@ Generate a webpage that displays your team's basic information for quick access 
 * [Usage](#Usage)
 * [License](#License)
 * [Contributing](#Contributing)
+* [Credits](#Credits)
 * [Tests](#Tests)
 * [Questions](#Questions)
 
@@ -59,6 +60,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Contributing
 
 This project is not seeking any contributors currently.
+
+## Credits
+
+- W3Schools js and Nodejs Docs - https://www.w3schools.com/
+- MDN Documentation - https://developer.mozilla.org/en-US/
+- Stack Overflow threads - https://stackoverflow.com/
+- JavaScript: The Definitive Guide, 7th Edition by David Flanagan - ISBN: 9781491952023
+- Node.js Docs - https://nodejs.org/en/docs/
+- Inquirer Docs - https://github.com/SBoudrias/Inquirer.js
+- The modern JavaScript Tutorial - https://javascript.info/
+- freeCodeCamp articles - https://www.freecodecamp.org/news
 
 ## Tests
 
