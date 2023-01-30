@@ -1,6 +1,6 @@
 
 
-const generatesPrompts = require("./lib/generatesPrompts");
+const generatesPrompts = require("./lib/generatesPrompts"); //contains logic for prompts
 
 function init() {
 
