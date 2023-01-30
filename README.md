@@ -29,7 +29,7 @@ npm i
 
 ## Usage
 
-Run the command below in the directory with the application files to get started. The generated profile will be created in the output folder within the current working directory within a file called team.html. The CLI example below shows the application functionality.
+Run the command below in the directory with the application files to get started. The generated profile will be created in the output folder within the current working directory as a file called team.html. The CLI example below shows the application functionality.
 
 
 ```
